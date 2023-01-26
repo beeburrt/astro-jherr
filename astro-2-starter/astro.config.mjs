@@ -7,11 +7,11 @@ import preact from "@astrojs/preact";
 export default defineConfig({
   integrations: [
     mdx(),
-    // node({
-    //   mode: "standalone",
-    // }),
+    node({
+      mode: "standalone",
+    }),
     preact(),
     tailwind(),
   ],
-  // output: "server",
+  output: "server",
 });
